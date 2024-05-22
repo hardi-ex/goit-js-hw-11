@@ -3,19 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>HW-11</title>
+    <link rel="stylesheet" href="" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <ul class="list">
-      <li class="item">
-        <a href="./page-2.html" class="link promo">Page 2</a>
-      </li>
+    <div class="container">
+      <form class="form js-form">
+        <input
+          class="input"
+          type="text"
+          name="query"
+          placeholder="Search images..."
+        />
+        <button class="btn" type="submit">Search</button>
+      </form>
+      <div class="gallery js-gallery"></div>
+      <span class="loader-span"></span>
+    </div>
 
-      <li class="item">
-        <a href="./page-3.html" class="link promo">Page 3</a>
-      </li>
-    </ul>
-    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

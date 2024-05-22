@@ -3,21 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>HW-11</title>
+    <link rel="stylesheet" href="" />
     
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-ff309b2f.css">
+    <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-8c59ed88.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-1cd1f9d9.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-edab1c09.css">
   </head>
   <body>
-    <ul class="list">
-      <li class="item">
-        <a href="./page-2.html" class="link promo">Page 2</a>
-      </li>
+    <div class="container">
+      <form class="form js-form">
+        <input
+          class="input"
+          type="text"
+          name="query"
+          placeholder="Search images..."
+        />
+        <button class="btn" type="submit">Search</button>
+      </form>
+      <div class="gallery js-gallery"></div>
+      <span class="loader-span"></span>
+    </div>
 
-      <li class="item">
-        <a href="./page-3.html" class="link promo">Page 3</a>
-      </li>
-    </ul>
     
   </body>
 </html>

@@ -7,6 +7,8 @@ import 'izitoast/dist/css/iziToast.min.css';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
+import iconError from './parts/error.svg';
+
 const lightbox = new SimpleLightbox('.gallery-item a', {
   captionsData: 'alt',
 });
@@ -58,6 +60,6 @@ function warningAlert(message) {
     color: '#EF4040',
     position: 'topRight',
     timeout: 5000,
-    iconUrl: './parts/error.svg',
+    iconUrl: iconError,
   });
 }
